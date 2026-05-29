@@ -1,0 +1,223 @@
+<?php
+
+include "config/db.php";
+
+if(isset($_POST['register'])){
+
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO users(fullname,email,password)
+            VALUES('$fullname','$email','$password')";
+
+    $result = mysqli_query($conn,$sql);
+
+    if($result){
+
+        header("Location: login.php");
+exit();
+    }
+}
+
+?>
+
+<?php
+
+$message = "";
+
+if(isset($_POST['register'])){
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $check = mysqli_query(
+    $conn,
+    "SELECT * FROM users WHERE email='$email'"
+    );
+
+    if(mysqli_num_rows($check) > 0){
+
+        $message =
+        "<div class='alert alert-error'>
+        User already registered.
+        </div>";
+    }
+
+    else{
+
+        $insert = mysqli_query(
+        $conn,
+        "INSERT INTO users(name,email,password)
+        VALUES('$name','$email','$password')"
+        );
+
+        if($insert){
+
+            $message =
+            "<div class='alert alert-success'>
+            Registration successful.
+            Please login now.
+            </div>";
+        }
+
+        else{
+
+            $message =
+            "<div class='alert alert-error'>
+            Registration failed.
+            </div>";
+        }
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <body>
+
+<div class="auth-container">
+
+    <!-- LEFT -->
+
+    <div class="left-side">
+
+    <div class="brand">
+        MediLink AI
+    </div>
+
+    <div class="hero-content">
+
+        <span class="tagline">
+            AI Emergency Healthcare Platform
+        </span>
+
+        <h1>
+            Smart Healthcare <br>
+            Registration System
+        </h1>
+
+        <p>
+            Create your MediLink AI account to access real-time
+            patient monitoring, emergency prediction,
+            hospital connectivity and intelligent healthcare analytics.
+        </p>
+
+        <div class="stats-row">
+
+            <div class="stat-card">
+                <h2>24/7</h2>
+                <span>Emergency Monitoring</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>50+</h2>
+                <span>Connected Hospitals</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>AI</h2>
+                <span>Live Risk Detection</span>
+            </div>
+
+        </div>
+
+        <div class="feature-list">
+
+            <div class="feature-item">
+                🚑 Instant Emergency Alerts
+            </div>
+
+            <div class="feature-item">
+                📊 AI Healthcare Analytics
+            </div>
+
+            <div class="feature-item">
+                🏥 Smart Hospital Connectivity
+            </div>
+
+            <div class="feature-item">
+                ❤️ Secure Patient Monitoring
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- RIGHT -->
+
+    <div class="auth-right">
+
+        <div class="auth-card">
+
+            <div class="auth-icon">
+                💗
+            </div>
+
+            <h2 class="auth-title">
+                Create Account
+            </h2>
+
+            <p class="auth-subtitle">
+                Register to continue with MediLink AI
+            </p>
+
+<?php echo $message; ?>
+
+            <form method="POST"
+                  class="auth-form">
+
+                <input type="text"
+                       name="name"
+                       placeholder="Full Name"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter Email"
+                       required>
+
+                <input type="password"
+                       name="password"
+                       placeholder="Create Password"
+                       required>
+
+                <button type="submit"
+                        class="auth-btn">
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <div class="auth-link">
+
+                <a href="login.php">
+                    Already have an account? Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>

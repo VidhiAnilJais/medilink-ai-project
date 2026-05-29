@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2ff;
+    padding:40px;
+}
+
+.report-container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.report-header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.report-header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.report-header p{
+    color:#cbd5e1;
+}
+
+.hospital-details p{
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.report-title{
+    padding:30px 40px;
+    border-bottom:1px solid #e2e8f0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.report-title h2{
+    color:#0f172a;
+    font-size:28px;
+}
+
+.report-title span{
+    color:#64748b;
+}
+
+.status-section{
+    margin:30px 40px;
+    padding:25px;
+    border-radius:18px;
+    color:white;
+}
+
+.status-section.high{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+.status-section.medium{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+}
+
+.status-section.low{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.status-section h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section{
+    padding:0 40px 35px;
+}
+
+.section h3{
+    color:#0f172a;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.info-box{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:25px;
+    border-radius:18px;
+}
+
+.info-box span{
+    color:#64748b;
+    font-size:14px;
+}
+
+.info-box h4{
+    margin-top:10px;
+    font-size:28px;
+    color:#0f172a;
+}
+
+.detail-box,
+.summary-box{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid #e2e8f0;
+    line-height:1.8;
+    color:#1e293b;
+}
+
+.summary-box ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.summary-box li{
+    margin-bottom:10px;
+}
+
+.report-footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.report-footer p{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+.button-group{
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.button-group button,
+.button-group a{
+    padding:14px 30px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button-group button:hover,
+.button-group a:hover{
+    transform:translateY(-2px);
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .report-header,
+    .report-title{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .report-header h1{
+        font-size:30px;
+    }
+
+    .report-title h2{
+        font-size:22px;
+    }
+
+}
+
+@media print{
+
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .button-group{
+        display:none;
+    }
+
+    .report-container{
+        box-shadow:none;
+    }
+
+}
+
+body{
+
+    background:#e5e7eb;
+
+    padding:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* MAIN REPORT */
+
+.report-container{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+/* PDF FIX */
+
+@media print {
+
+    body{
+
+        background:white;
+
+        padding:0;
+
+    }
+
+    
+    .report-container{
+
+        width:100%;
+
+        max-width:100%;
+
+        border-radius:0;
+
+        box-shadow:none;
+
+    }
+
+    
+    .button-group{
+
+        display:none;
+    }
+
+}
+
+.report-container{
+
+    width:1200px;
+
+    min-height:auto;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}

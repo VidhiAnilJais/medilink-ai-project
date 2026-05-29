@@ -1,0 +1,161 @@
+<?php
+
+session_start();
+
+include "config/db.php";
+
+if(isset($_SESSION['user'])){
+
+    header("Location: dashboard.php");
+}
+
+if(isset($_POST['login'])){
+
+    $email = $_POST['email'];
+
+    $password = $_POST['password'];
+
+    $sql =
+    "SELECT * FROM users
+    WHERE email='$email'
+    AND password='$password'";
+
+    $result = mysqli_query($conn,$sql);
+
+    if(mysqli_num_rows($result) > 0){
+
+        $_SESSION['user'] = $email;
+
+        header("Location: dashboard.php");
+    }
+
+    else{
+
+        $error = "Invalid Email or Password";
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediLink AI Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-side">
+
+        <div class="brand">
+            MediLink AI
+        </div>
+
+        <h1>
+            AI-Powered Healthcare
+            Emergency Platform
+        </h1>
+
+        <p>
+            Real-time patient monitoring,
+            emergency response,
+            AI analytics and smart healthcare
+            assistance for modern hospitals.
+        </p>
+
+        <div class="features">
+
+            <div class="feature-box">
+                ⚡ AI Risk Prediction
+            </div>
+
+            <div class="feature-box">
+                ❤️ Live Patient Monitoring
+            </div>
+
+            <div class="feature-box">
+                🚑 Emergency Alert System
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right-side">
+
+        <div class="login-card">
+
+            <div class="heart">
+                ❤️
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Sign in to continue to MediLink AI
+            </p>
+
+<?php
+
+if(isset($error)){
+
+    echo "
+    <div class='error-box'>
+        $error
+    </div>
+    ";
+}
+
+?>
+
+            <form method="POST">
+
+                <input type="email"
+                       name="email"
+                       placeholder="Email Address"
+                       required>
+
+                <input type="password"
+                       name="password"
+                       placeholder="Password"
+                       required>
+
+                <button class="login-btn"
+                        name="login">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <a class="register-link"
+               href="register.php">
+
+                Create New Account
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
