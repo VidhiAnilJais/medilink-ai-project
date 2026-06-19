@@ -9,7 +9,7 @@ Building a Faster, Smarter & More Connected Emergency Healthcare Future
 </p>
 
 <p align="center">
-<img width="180" height="380" alt="image" src="https://github.com/user-attachments/assets/f32d2fa7-ef32-4892-964a-c83de86b03a0" />
+<img width="526" height="380" alt="image" src="https://github.com/user-attachments/assets/f32d2fa7-ef32-4892-964a-c83de86b03a0" />
 
 </p>
 
