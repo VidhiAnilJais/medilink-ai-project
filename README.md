@@ -9,7 +9,8 @@ Building a Faster, Smarter & More Connected Emergency Healthcare Future
 </p>
 
 <p align="center">
-<img src="YOUR_LOGO_IMAGE_LINK" width="180">
+<img width="180" height="380" alt="image" src="https://github.com/user-attachments/assets/f32d2fa7-ef32-4892-964a-c83de86b03a0" />
+
 </p>
 
 
@@ -57,23 +58,23 @@ MediLink AI provides an intelligent healthcare decision-support system that help
 
 User Health Input
 
-⬇️
+       ⬇️
 
 AI Risk Assessment Engine
 
-⬇️
+       ⬇️
 
 Patient Risk Classification
 
-⬇️
+       ⬇️
 
 Real-Time Monitoring Dashboard
 
-⬇️
+       ⬇️
 
 Emergency Healthcare Assistance
 
-⬇️
+       ⬇️
 
 Reports & Analytics
 
@@ -130,17 +131,20 @@ Maintains organized health records for better tracking and future decisions.
 
 ## AI Monitoring Dashboard
 
-<img src="ADD_IMAGE_LINK">
+<img width="1890" height="926" alt="image" src="https://github.com/user-attachments/assets/6e5b08ff-ea0b-4835-b0eb-2dd3a6ccf38c" />
+
 
 
 ## Emergency Hospitals
 
-<img src="ADD_IMAGE_LINK">
+<img width="1890" height="918" alt="image" src="https://github.com/user-attachments/assets/5b5bd349-dbd7-461b-9b0a-c1075a80cd30" />
+
 
 
 ## Patient History
 
-<img src="ADD_IMAGE_LINK">
+<img width="1887" height="922" alt="image" src="https://github.com/user-attachments/assets/216f2249-f659-4c9d-bb12-8a2d5bb4b476" />
+
 
 
 ---
