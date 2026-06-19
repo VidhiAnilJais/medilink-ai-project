@@ -222,7 +222,7 @@ By combining artificial intelligence with healthcare support, MediLink AI works 
 # 👩‍💻 Developer
 
 **Team MARUTI**
-
+** - VIDHI ANIL JAIS [Solo Participant] **
 Project: MediLink AI
 
 Built for:
