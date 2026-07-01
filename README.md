@@ -228,14 +228,20 @@ Project: MediLink AI
 
 Built for:
 INDIA.RUNS Hackathon by Redrob AI
-Ideathon Track 03 — Improve Everyday Life with AI
 
 
 ---
 
 # 📌 Live Demo
 
-https://medilink-ai.infinityfreeapp.com/
+MediLink-AI : https://medilink-ai.infinityfreeapp.com/
+
+# Project Links 
+Project Showcase : https://vidhianiljais.github.io/MediLink-AI_showcase/          { The reason to develop this project }
+
+D-drive Link : https://drive.google.com/drive/folders/1wYXfUeHmJzX2sGupkdn2F8sTdSOh_4lA     
+
+Market Research : https://gemini.google.com/share/e29494df9ced
 
 
 ---
