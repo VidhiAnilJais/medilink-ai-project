@@ -227,7 +227,7 @@ By combining artificial intelligence with healthcare support, MediLink AI works 
 Project: MediLink AI
 
 Built for:
-INDIA.RUNS Hackathon  
+INDIA.RUNS Hackathon by Redrob AI
 Ideathon Track 03 — Improve Everyday Life with AI
 
 
