@@ -249,3 +249,4 @@ Market Research : https://gemini.google.com/share/e29494df9ced
 # 📜 License
 
 This project is developed for innovation and educational purposes.
+© 2026 Vidhi Anil Jais. All Rights Reserved. MediLink-AI is an original project created by the author.
