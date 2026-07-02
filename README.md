@@ -15,7 +15,6 @@ Building a Faster, Smarter & More Connected Emergency Healthcare Future
 
 </p>
 
-
 ## 🌍 Overview
 
 **MediLink AI** is an AI-powered emergency healthcare assistance platform designed to help people make faster and smarter healthcare decisions during critical situations.
@@ -52,6 +51,12 @@ MediLink AI provides an intelligent healthcare decision-support system that help
 ✅ Receive emergency healthcare guidance  
 ✅ Connect with healthcare support when required  
 
+
+---
+
+# 📌 Live Demo
+
+MediLink-AI : https://medilink-ai.infinityfreeapp.com/
 
 ---
 
@@ -231,10 +236,6 @@ INDIA.RUNS Hackathon by Redrob AI
 
 
 ---
-
-# 📌 Live Demo
-
-MediLink-AI : https://medilink-ai.infinityfreeapp.com/
 
 # Project Links 
 Project Showcase : https://vidhianiljais.github.io/MediLink-AI_showcase/          { The reason to develop this project }
